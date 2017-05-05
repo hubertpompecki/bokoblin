@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander')
 const fs = require('fs')
-const fs = require('path')
+const path = require('path')
 const execSync = require('child_process').execSync;
 const commandExistsSync = require('command-exists').sync;
 
