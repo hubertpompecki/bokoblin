@@ -25,6 +25,8 @@ Then initialize your test suite with
 yarn test init
 ```
 
+Develop your code in `app/component.js`.
+
 ### Generating a lambda
 To generate a new lambda function you need to specify its name and the indentifier of the IAM role which Amazon will assign to it.
 ```
