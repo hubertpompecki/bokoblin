@@ -5,7 +5,7 @@
   "repository": {},
   "license": "MIT",
   "bin": {
-    "generate": "./index.js"
+    "bokoblin": "./index.js"
   },
   "dependencies": {
     "command-exists": "^1.2.2",
