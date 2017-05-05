@@ -28,6 +28,7 @@ bokoblin MyNewFunction arn:aws:iam::123456789123456:role/lambda_basic_execution
 
 ### Scripts
 You get the following out of the box:
+- `yarn run flow` - carries out static type checking with flow
 - `yarn run build` - builds the function into `build/component.js`
 - `yarn run test` - builds the function and runs jasmine specs
 - `yarn run push` - build the function, runs specs, and pushes to Amazon AWS
