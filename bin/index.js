@@ -47,9 +47,9 @@ json = {
   version: '1.0.0',
   license: 'ISC',
   scripts: {
-    "build": "webpack",
-    "test": "webpack && jasmine",
-    "push": `webpack && jasmine && zip -j -r component.zip build/* && (aws lambda create-function --function-name ${functionNameValue} --runtime nodejs6.10 --role ${roleResourceValue} --handler component.process --zip-file fileb://./component.zip 2> /dev/null || aws lambda update-function-code --function-name ${functionNameValue} --zip-file fileb://./component.zip) && rm component.zip`
+    "build": "./node_modules/.bin/webpack",
+    "test": "./node_modules/.bin/webpack && ./node_modules/.bin/jasmine",
+    "push": `./node_modules/.bin/webpack && ./node_modules/.bin/jasmine && zip -j -r component.zip build/* && (aws lambda create-function --function-name ${functionNameValue} --runtime nodejs6.10 --role ${roleResourceValue} --handler component.process --zip-file fileb://./component.zip 2> /dev/null || aws lambda update-function-code --function-name ${functionNameValue} --zip-file fileb://./component.zip) && rm component.zip`
   }
 }
 fs.writeFileSync(`${functionNameValue}/package.json`, JSON.stringify(json, null, 2))
