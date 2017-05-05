@@ -26,7 +26,7 @@ yarn test init
 ```
 
 ### Generating a lambda
-To generate a new lambda function you need specify its name and the indentifier of the IAM role which Amazon will assign to it.
+To generate a new lambda function you need to specify its name and the indentifier of the IAM role which Amazon will assign to it.
 ```
 bokoblin MyNewFunction arn:aws:iam::123456789123456:role/lambda_basic_execution
 ```
