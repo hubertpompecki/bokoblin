@@ -38,7 +38,7 @@ fs.mkdirSync(`${functionNameValue}/app`)
 fs.createReadStream(path.resolve(__dirname, 'templates/webpack.config.js')).pipe(fs.createWriteStream(`${functionNameValue}/webpack.config.js`))
 fs.createReadStream(path.resolve(__dirname, 'templates/component.js')).pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
 fs.createReadStream(path.resolve(__dirname, 'templates/flowconfig')).pipe(fs.createWriteStream(`${functionNameValue}/.flowconfig`))
-fs.createReadStream(path.resolve(__dirname, 'templates/gitignore')).pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
+fs.createReadStream(path.resolve(__dirname, 'templates/gitignore')).pipe(fs.createWriteStream(`${functionNameValue}/.gitignore`))
 
 //--- Setting up package.json ---//
 console.log('Setting up package.json')
