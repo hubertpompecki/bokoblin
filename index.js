@@ -34,10 +34,10 @@ console.log('Creating directory')
 fs.mkdirSync(functionNameValue)
 fs.mkdirSync(`${functionNameValue}/app`)
 // copy template files
-fs.createReadStream('templates/webpack.config.js').pipe(fs.createWriteStream(`${functionNameValue}/webpack.config.js`))
-fs.createReadStream('templates/component.js').pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
-fs.createReadStream('templates/flowconfig').pipe(fs.createWriteStream(`${functionNameValue}/.flowconfig`))
-fs.createReadStream('templates/gitignore').pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
+fs.createReadStream('./templates/webpack.config.js').pipe(fs.createWriteStream(`${functionNameValue}/webpack.config.js`))
+fs.createReadStream('./templates/component.js').pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
+fs.createReadStream('./templates/flowconfig').pipe(fs.createWriteStream(`${functionNameValue}/.flowconfig`))
+fs.createReadStream('./templates/gitignore').pipe(fs.createWriteStream(`${functionNameValue}/app/component.js`))
 
 //--- Setting up package.json ---//
 console.log('Setting up package.json')
