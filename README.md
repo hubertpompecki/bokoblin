@@ -19,17 +19,22 @@ or Yarn
 ```
 yarn global add bokoblin
 ```
-Then initialize your test suite with
+
+### Generating a lambda
+To generate a new lambda function you need to specify its name and the indentifier of the IAM role which Amazon will assign to it.
+```
+bokoblin MyNewFunction arn:aws:iam::123456789123456:role/lambda_basic_execution
+
+cd MyNewFunction
+```
+
+Then initialize your test suite with:
 
 ```
 yarn test init
 ```
 
-### Generating a lambda
-To generate a new lambda function you need specify its name and the indentifier of the IAM role which Amazon will assign to it.
-```
-bokoblin MyNewFunction arn:aws:iam::123456789123456:role/lambda_basic_execution
-```
+Develop your code in `app/component.js`.
 
 ### Scripts
 You get the following out of the box:
